@@ -1,0 +1,13 @@
+{
+  "name": "peer-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn peerjs --port 9000 --key peerjs --path /",
+    "start": "yarn peerjs --port $PORT --key peerjs --path /"
+  },
+  "dependencies": {
+    "peer": "^0.6.1"
+  }
+}

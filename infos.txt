@@ -1,0 +1,3 @@
+ICE Server = rota mais curta de comunicação entre clientes
+STUN server = descobrir o endereço necessário para conexão
+TURN Server = garantir o tráfego de mensagens e stream como contingência
