@@ -3,14 +3,17 @@ const onload = () => {
   const room = urlParams.get('room');
   console.log('this is the room', room)
 
-  const socketUrl = 'http://localhost:3000';
+  // const socketUrl = 'http://localhost:3000';
+  const socketUrl = 'https://webrtc-server-vp.herokuapp.com';
   const socketBuilder = new SocketBuilder({ socketUrl });
 
   const peerConfig = Object.values({
     id: undefined,
     config: {
-      port: 9000,
-      host: 'localhost',
+      host: 'vp-peer-server.herokuapp.com',
+      secure: true,
+      // port: 9000,
+      // host: 'localhost',
       path: '/'
     }
   });
